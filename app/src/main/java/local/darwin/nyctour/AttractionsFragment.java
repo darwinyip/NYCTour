@@ -25,7 +25,7 @@ public class AttractionsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Central Park", "Manhattan", "Biggest park of NYC", R.raw.central_park));
+        places.add(new Place("Central Park", "Manhattan", "Central Park is a visual masterpiece created by landscape designer Frederick Law Olmsted and architect Calvert Vaux. It has gone through major developments and restoration over time to carry on its initial purpose as an open-air oasis for a metropolitan city. No matter the season or reason for your visit, this national historic landmark is a setting for enjoying many pursuits.", R.raw.central_park));
 
         RecyclerView recyclerView = rootView.findViewById(R.id.section_container);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
