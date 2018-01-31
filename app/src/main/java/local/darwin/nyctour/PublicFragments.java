@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+/**
+ * Fragment containing Views of public places.
+ */
 public class PublicFragments extends Fragment {
-
-    public PublicFragments() {
-    }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

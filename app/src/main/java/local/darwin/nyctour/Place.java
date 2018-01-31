@@ -1,5 +1,8 @@
 package local.darwin.nyctour;
 
+/**
+ * Model for Places used to hold data.
+ */
 public class Place {
     private String name;
     private String location;

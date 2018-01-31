@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+/**
+ * RecyclerView adapter for Place.
+ */
 public class PlaceAdapter extends RecyclerView.Adapter<PlaceHolder> {
 
     private ArrayList<Place> places;

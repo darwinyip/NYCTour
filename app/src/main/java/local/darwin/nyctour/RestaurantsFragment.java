@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+/**
+ * Fragment containing Views of restaurant places.
+ */
 public class RestaurantsFragment extends Fragment {
-
-    public RestaurantsFragment() {
-    }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

@@ -14,6 +14,12 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         super(fm);
     }
 
+    /**
+     * Returns corresponding fragment based on Pager position.
+     *
+     * @param position Current Pager position
+     * @return Fragment
+     */
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
@@ -26,9 +32,13 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     }
 
+    /**
+     * Gets count of Fragments
+     *
+     * @return Number of fragments
+     */
     @Override
     public int getCount() {
-        // Show 3 total pages.
         return 3;
     }
 }

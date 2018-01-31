@@ -12,13 +12,9 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 /**
- * A placeholder fragment containing a simple view.
+ * Fragment containing Views of attraction places.
  */
 public class AttractionsFragment extends Fragment {
-
-    public AttractionsFragment() {
-    }
-
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
