@@ -21,7 +21,9 @@ public class RestaurantsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Central Park", "Manhattan", "Central Park is a visual masterpiece created by landscape designer Frederick Law Olmsted and architect Calvert Vaux. It has gone through major developments and restoration over time to carry on its initial purpose as an open-air oasis for a metropolitan city. No matter the season or reason for your visit, this national historic landmark is a setting for enjoying many pursuits.", R.raw.central_park));
+        places.add(new Place("Katz's Delicatessen", "Lower East Side", "Katz’s is the undisputed pastrami king of NYC. This sprawling LES institution has been serving thick-cut, meltingly tender pastrami on rye since 1888 and doesn’t show any signs of slowing down.", R.raw.katzs_deli));
+        places.add(new Place("Juliana's Pizza", "Brooklyn", "Juliana's heralds  the return of Patsy Grimaldi, New York City’s most celebrated pizza proprietor: not only to the NYC restaurant scene, but to 19 Old Fulton Street, the original location under the Brooklyn Bridge", R.raw.julianas));
+        places.add(new Place("Brooklyn Brewery", "Brooklyn", "Brooklyn Brewery makes beer. Good beer. Not only does it taste good and make your meal better but we like to think that since its founding in 1988, Brooklyn Brewery has brewed flavorful beers that enrich the life, tradition and culture of the communities it serves.", R.raw.brooklyn_brewery));
 
         RecyclerView recyclerView = rootView.findViewById(R.id.section_container);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
