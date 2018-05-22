@@ -5,4 +5,5 @@
     <string name="tab_text_public">Public Places</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="image_desc_text">Thumbnail image</string>
+    <string name="terminals">Terminals</string>
 </resources>

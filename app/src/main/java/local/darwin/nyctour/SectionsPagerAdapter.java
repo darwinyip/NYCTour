@@ -26,8 +26,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             return new AttractionsFragment();
         } else if (position == 1) {
             return new RestaurantsFragment();
+        } else if (position == 2) {
+            return new PublicFragment();
         } else {
-            return new PublicFragments();
+            return new TerminalFragment();
         }
 
     }
@@ -39,6 +41,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 }

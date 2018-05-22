@@ -14,7 +14,7 @@ import java.util.ArrayList;
 /**
  * Fragment containing Views of public places.
  */
-public class PublicFragments extends Fragment {
+public class PublicFragment extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
