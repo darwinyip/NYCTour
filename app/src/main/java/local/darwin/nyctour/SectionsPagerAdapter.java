@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
-public class SectionsPagerAdapter extends FragmentPagerAdapter {
+class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     SectionsPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -22,14 +22,15 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public Fragment getItem(int position) {
-        if (position == 0) {
-            return new AttractionsFragment();
-        } else if (position == 1) {
-            return new RestaurantsFragment();
-        } else if (position == 2) {
-            return new PublicFragment();
-        } else {
-            return new TerminalFragment();
+        switch (position) {
+            case 0:
+                return new AttractionsFragment();
+            case 1:
+                return new RestaurantsFragment();
+            case 2:
+                return new PublicFragment();
+            default:
+                return new TerminalFragment();
         }
 
     }

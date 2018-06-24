@@ -21,9 +21,9 @@ public class AttractionsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Statue of Liberty", "Liberty Island", "\"The Statue of Liberty Enlightening the World\" was a gift of friendship from the people of France to the United States and is recognized as a universal symbol of freedom and democracy. The Statue of Liberty was dedicated on October 28, 1886.  It was designated as a National Monument in 1924.  Employees of the National Park Service have been caring for the colossal copper statue since 1933. ", R.raw.statue_liberty));
-        places.add(new Place("Museum of Modern Art", "Manhattan", "MoMA is a place that fuels creativity, ignites minds, and provides inspiration. Its extraordinary exhibitions and collection of modern and contemporary art are dedicated to helping you understand and enjoy the art of our time.", R.raw.moma));
-        places.add(new Place("One World Trade Center", "Manhattan", "One World Trade Center is the main building of the rebuilt World Trade Center complex in Lower Manhattan, New York City. It is the tallest building in the Western Hemisphere, and the sixth-tallest in the world.", R.raw.one_world_trade));
+        places.add(new Place(getString(R.string.statue_of_liberty), getString(R.string.mahattan), getString(R.string.statue_of_liberty_desc), R.drawable.statue_liberty));
+        places.add(new Place(getString(R.string.moma), getString(R.string.mahattan), getString(R.string.moma_desc), R.drawable.moma));
+        places.add(new Place(getString(R.string.wtc), getString(R.string.mahattan), getString(R.string.wtc_desc), R.drawable.one_world_trade));
 
         RecyclerView recyclerView = rootView.findViewById(R.id.section_container);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());

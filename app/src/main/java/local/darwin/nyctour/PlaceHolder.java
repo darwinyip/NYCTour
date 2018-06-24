@@ -10,10 +10,10 @@ import android.widget.TextView;
  */
 class PlaceHolder extends RecyclerView.ViewHolder {
 
-    private TextView name;
-    private TextView location;
-    private TextView description;
-    private ImageView image;
+    private final TextView name;
+    private final TextView location;
+    private final TextView description;
+    private final ImageView image;
     private boolean isHidden = true;
 
     /**
